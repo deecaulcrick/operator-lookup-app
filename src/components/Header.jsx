@@ -7,7 +7,11 @@ function Header() {
     const { darkMode, toggleDarkMode } = useTheme();
     return (
         <div className="header">
-            <h3 className="logo"><span><img src={logo} width='20px' className="logoIcon" /></span>Operator Lookup</h3>
+            <div className="logo">
+                <img src={logo} width='20px' className="logoIcon" />
+                <h3>Operator Lookup</h3>
+            </div>
+
 
             <img src={darkMode ? moon : sun}
                 onClick={toggleDarkMode} />

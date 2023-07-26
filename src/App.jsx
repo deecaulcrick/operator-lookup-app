@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import Body from "./components/Body"
+import Footer from "./components/Footer";
 import { useTheme } from './context/ThemeContext';
 import './App.css'
 
@@ -16,6 +17,7 @@ function App() {
             }}>
             <Header />
             <Body />
+            <Footer />
         </div>
     )
 }
