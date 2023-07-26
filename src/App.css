@@ -1,0 +1,114 @@
+body{
+    background: rgb(252,215,255);
+background: radial-gradient(circle, rgba(252,215,255,1) 0%, rgba(228,234,241,1) 100%);
+font-family: 'Cormorant Garamond', serif;
+}
+
+.header{
+    border-bottom: 1px solid rgb(202, 200, 200);
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#github{
+    background-color: black;
+    color: white;
+    height: 40px;
+    border: none;
+    width: 70px;
+    border-radius: 40px;
+}
+
+.pink-text{
+    color: #f256fd;
+}
+
+.hero{
+    text-align: center;
+    padding: 40px;
+}
+
+.hero h1{
+    font-size: 60px;
+    line-height: 1.1em;
+}
+.hero p{
+    font-size: 18px;
+}
+
+.operator-section{
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.operator-grid{
+    display: grid;
+    grid-template-columns: repeat(8, minmax(50px, 1fr));
+    grid-gap: 10px;
+    max-width: 800px;
+}
+.operator{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.operator:hover {
+    background-color: #f9ebfa;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.description-box{
+    text-align: center;
+    margin-top: 30px;
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 15px;
+}
+.description-box p{
+    margin-top: 0px;
+}
+
+.operator-link{
+    background-color: rgb(252,215,255);
+    text-align: center;
+    padding: 15px 35px;
+    border-radius: 15px;
+}
+#operator-link-text{
+    margin: 0px;
+}
+.operator-link a{
+    color: black;
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero{
+        padding: 30px;
+    }
+    .operator-section{
+        padding: 10px 50px;
+    }
+    .operator-grid{
+        grid-template-columns: repeat(6, minmax(50px, 1fr));
+    }
+  }
